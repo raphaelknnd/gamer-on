@@ -12,27 +12,33 @@
     background: transparent;
 }
 
-header{
-    display: flex;
+header {
+    width: 100%;
     background-color: #000000;
+}
+
+.nav_menu {
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5px 24px;
 }
 
-.menu{ 
+.menu {
+    flex: 1; /* Isso faz a ul ocupar o máximo espaço disponível */
     display: flex;
-    justify-content: space space-between;
+    justify-content: center;
     align-items: center;
     list-style-type: none;
+    gap: 20px;
 }
 
-.menu_item{
+.menu_item {
     color: #ffffff;
     font-family: 'Lalezar', 'cursive';
-    font-size: 1.3em; /*Verificar o tamanho da fonte*/
+    font-size: 1.3em; /*Verificar o tamanho da fonte -> usar rem ao invés de em*/
     text-decoration: none;
-    padding-inline: 20px;
+    padding: 20px; /* Padding normal, não usar o inline */
 }
 
 .menu_item:hover{
@@ -40,16 +46,22 @@ header{
 
 }
 
-.menu_carrinho{
+.menu_carrinho.container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu_carrinho.menu_item {
     width: 2em;
 }
 
 
-.logo{
+.menu_carrinho.container .logo {
     width: 10%;
 }
 
-.login{
+.menu_carrinho.container .login {
     font-family: 'Lalezar', 'cursive';
     font-size: 1em;
     border-radius: 24px;
