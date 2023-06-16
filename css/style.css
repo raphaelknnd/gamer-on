@@ -27,7 +27,7 @@ header {
 .menu {
     flex: 1; /* Isso faz a ul ocupar o máximo espaço disponível */
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     list-style-type: none;
     gap: 20px;
@@ -36,9 +36,9 @@ header {
 .menu_item {
     color: #ffffff;
     font-family: 'Lalezar', 'cursive';
-    font-size: 1.3em; /*Verificar o tamanho da fonte -> usar rem ao invés de em*/
+    font-size: 1rem; /*Verificar o tamanho da fonte -> usar rem ao invés de em*/
     text-decoration: none;
-    padding: 20px; /* Padding normal, não usar o inline */
+    padding-inline: 20px; /* Padding normal, não usar o inline */
 }
 
 .menu_item:hover{
@@ -57,7 +57,7 @@ header {
 }
 
 
-.menu_carrinho.container .logo {
+.logo {
     width: 10%;
 }
 
@@ -74,4 +74,45 @@ header {
 
 .banner-controls{
     width: 100%;
+}
+
+.gamer{
+    width: 100%;
+    height: 100%;
+    background-color: #000d2f;
+    
+}
+
+.conteudo_gamer{
+    display: flex;
+    color: white;
+
+}
+
+#gamer_title{
+    color: white;
+    font-family: 'Lalezar', 'cursive';
+    font-size: 3.6rem;
+}
+
+.produto{
+    display:flex;
+    flex-direction: column;
+    background-color: #464141;
+    margin: 50px;
+    align-items: center;
+    font-family: 'Lalezar', 'cursive';
+}
+
+.produto_img{
+    background-color: white;
+    width: 40%;
+}
+
+.produto_descricao{
+    
+}
+
+.produto_preco{
+    color: #33ff54;
 }
