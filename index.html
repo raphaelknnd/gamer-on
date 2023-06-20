@@ -15,15 +15,15 @@
             <img class = "logo" src="assets/img/logo.png" alt="logo gamer on">
             
             <ul class = "menu">
-                <li class = "menu_item">Contato</li>
-                <li class = "menu_item">Gamer</li>
-                <li class = "menu_item">Home Office</li>
-                <li class = "menu_item">Celulares</li>
+                <li class = "menu_item"><a href="#contato">Contato</a></li>
+                <li class = "menu_item"><a href="#gamer">Gamer</a></li>
+                <li class = "menu_item"><a href="#home">Home Office</a></li>
+                <li class = "menu_item"><a href="#celulares">Celulares</a></li>
             </ul>
             
             <div class="menu_carrinho container">
                 <img class = "menu_carrinho menu_item" src="assets/img/carrinho.png" alt="carrinho">
-                <button class = "login menu_item">Login</button>
+                <button class = "login menu_item"><a href="login.html">Login</a></button>
             </div>
         </nav>
     </header>
@@ -82,7 +82,7 @@
         </section>
 
     <!--Página "gamer"-->
-        <section class = "page gamer">
+        <section id = "gamer" class = "page gamer">
             <p id = "page_title">
                 Gamer
             </p>
@@ -129,7 +129,7 @@
         </section>
 
     <!--Página Home-Office-->
-        <section class = "page">
+        <section id = "home" class = "page">
             <p id = "page_title">
                 Home Office
             </p>
@@ -176,7 +176,7 @@
         </section>
 
     <!--Página "celulares"-->
-        <section class = "page gamer">
+        <section id = "celulares" class = "page gamer">
             <p id = "page_title">
                 Celulares
             </p>
@@ -226,7 +226,7 @@
 
     </main>
 
-    <footer>
+    <footer id ="contato">
         <div>
             <img id = "footer_logo" src="assets/img/logo.png" alt="">
         </div>
@@ -238,7 +238,8 @@
         </div>
 
         <div id = "footer_social">
-            <h2>Fale conosco através de nosas redes sociais</h2>
+            <h2>Fale conosco</h2>
+
             <div id = "footer_social_icons_content">
                 <img class = "footer_social_icons" src="assets/img/instagram.png" alt="">
                 <img class = "footer_social_icons" src="assets/img/facebook.png" alt="">
@@ -246,7 +247,9 @@
                 <img class = "footer_social_icons" src="assets/img/mail.png" alt="">
             </div>
 
-            <img id = "footer_map" src="assets/img/map.png" alt="">
+            <div>
+                <img id = "footer_map" src="assets/img/map.png" alt="">
+            </div>
         </div>
     </footer>
 </body>
